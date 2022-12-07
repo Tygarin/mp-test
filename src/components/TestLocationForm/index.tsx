@@ -15,7 +15,7 @@ const TestLocationForm: React.FC<Props> = ({ index }) => {
       <div className="flex mb-4 gap-x-4 items-center">
         <FormLocation index={index} />
         <FormEnv index={index} />
-        <FormServers />
+        <FormServers index={index} />
       </div>
       <FormHint index={index} />
     </div>

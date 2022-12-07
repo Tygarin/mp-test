@@ -31,7 +31,11 @@ const TestLocationsList: React.FC = () => {
         <AddButton />
         <button
           className="border border-red-500 text-red-500 self-center rounded px-3 py-1 mb-5"
-          onClick={() => console.log(toJS(locationsList))}
+          onClick={() =>
+            console.log(
+              toJS(locationsList.map(({ id, ...other }) => ({ ...other })))
+            )
+          }
         >
           Вывести результат в консоль
         </button>
